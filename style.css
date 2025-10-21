@@ -1,0 +1,224 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    
+}
+
+header {
+    border-bottom: 3px solid #000000;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.header-content {
+    margin-top: 20px;
+    font-size: 20px;
+    flex: 1;
+}
+
+.title {
+    font-size: 15px;
+    
+}
+
+.photo {
+    flex-shrink: 0;
+}
+
+.photo img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+ h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+.title {
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+        /* Main Sections */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #666;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.entry-header {
+    margin-top: 10px;
+}
+
+.entry-title {
+    font-weight: bold;
+}
+
+.entry-date {
+    font-weight: bold;
+}
+
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.soft-item {
+    margin-left: 30px;
+    font-size: 1.1em;
+}
+
+.hard-item {
+    margin-right: 30px;
+    font-size: 1.1em;
+}
+
+.list-skills {
+    font-size: 0.9em;
+}
+
+
+.contact-label {
+    font-weight: bold;
+}
+
+.sosmed {
+    text-decoration: none;
+    color: black;
+}
+
+/* Media Query untuk Tablet (768px ke bawah) */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-content {
+        margin-top: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .photo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Skills menjadi vertikal di tablet */
+    .skills-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .soft-item,
+    .hard-item {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+}
+
+/* Media Query untuk Mobile (480px ke bawah) */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .title {
+        font-size: 0.9em;
+    }
+
+    .photo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .entry-header {
+        flex-direction: column;
+    }
+
+    .entry-title,
+    .sekolah,
+    .event {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .entry-date,
+    .tahun {
+        display: block;
+        font-size: 0.9em;
+        color: #666;
+    }
+
+    .soft-item,
+    .hard-item {
+        font-size: 1em;
+    }
+
+    .list-skills {
+        font-size: 0.85em;
+        padding-left: 20px;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .sosmed {
+        word-break: break-all;
+        font-size: 0.85em;
+    }
+}
+
